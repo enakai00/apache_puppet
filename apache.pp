@@ -3,5 +3,5 @@ package { 'httpd':
 }
 
 service { 'httpd':
-  ensure => running,
+  ensure => stopped,
 }
