@@ -1,3 +1,7 @@
 package { 'httpd':
-  ensure => latest,
+  ensure => latest, 
+}
+
+service { 'httpd':
+  ensure => running,
 }
