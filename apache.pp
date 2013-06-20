@@ -4,4 +4,5 @@ package { 'httpd':
 
 service { 'httpd':
   ensure => running,
+  enable => true,
 }
