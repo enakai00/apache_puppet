@@ -3,7 +3,7 @@ package { 'httpd':
 } 
 
 service { 'httpd':
-  ensure => running,
+##  ensure => running,
   enable => true, 
   hasrestart => true, 
   hasstatus => true, 
@@ -13,7 +13,7 @@ file { '/var/www/html/index.html':
   owner => 'apache',
   group => 'apache',
   mode => '0600',
-  content => "<h1>This is $hostname</h1>",
+  content => "<h1>Hello, World!</h1>",
 }
 
 exec { 'fw-http':
